@@ -24,13 +24,13 @@ In this repo, there are three folders:
 
 [Note] In order to test the model:
 1. T5 Fine-tune:
-- Download the model from the link:
+- Download the model from the link: [T5 Fine-tune]()
 - Download the predict_new.ipynb
 - Open predict_new, replace the link of the model with your actual model link
 - Put your input sentence and try the model
 2. Encoder - Decoder LSTM:
-- Download the Model Attachement from the link
-- Download the model from the link:
+- Download the Model Attachement from the link: 
+- Download the model from the link: [LSTM Model](https://drive.google.com/file/d/1x93g91Aq8vY3_TcQN_LRBK5AW8AU9qSf/view?usp=sharing)
 - Download and open predict_new.py
 - Replace the link of the input, output embedding and in, out_tokenizer with your actual path
 - Put your input sentence and try the model
