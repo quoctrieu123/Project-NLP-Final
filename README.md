@@ -50,7 +50,7 @@
 - `in_embedding_matrix`, `out_embedding_matrix`: file saved the model's embedding matrix
 
 ### Trained Model:
-Download Trained LSTM Model](https://drive.google.com/file/d/1x93g91Aq8vY3_TcQN_LRBK5AW8AU9qSf/view?usp=sharing)
+[Download Trained LSTM Model](https://drive.google.com/file/d/1x93g91Aq8vY3_TcQN_LRBK5AW8AU9qSf/view?usp=sharing)
 
 ### How to Run:
 1. Download the model and all attachments.
