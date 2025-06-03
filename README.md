@@ -4,10 +4,10 @@
 ## Our Datasets
 
 - **Training Dataset – C4 (Common Crawl)**  
-  🔗 [Download on Kaggle](https://www.kaggle.com/datasets/dariocioni/c4200m)
+  [Download on Kaggle](https://www.kaggle.com/datasets/dariocioni/c4200m)
 
 - **Evaluation Dataset – Lang-8**  
-  🔗 [Download on Kaggle](https://www.kaggle.com/datasets/studentramya/lang-8)
+  [Download on Kaggle](https://www.kaggle.com/datasets/studentramya/lang-8)
 
 ---
 
@@ -20,7 +20,7 @@
 
 ### How to Run:
 1. Download the fine-tuned model:  
-   🔗 [T5 Fine-tune](https://drive.google.com/drive/folders/16ojRM38ZUNO40iIKytgATGPuk8aJDhBe?usp=sharing)
+   [T5 Fine-tune](https://drive.google.com/drive/folders/16ojRM38ZUNO40iIKytgATGPuk8aJDhBe?usp=sharing)
 2. Open `predict_new.ipynb`
 3. Replace the model path with your local directory
 4. Enter any input sentence to see the correction results
@@ -50,7 +50,7 @@
 - `in_embedding_matrix`, `out_embedding_matrix`: file saved the model's embedding matrix
 
 ### Trained Model:
-🔗 [Download Trained LSTM Model](https://drive.google.com/file/d/1x93g91Aq8vY3_TcQN_LRBK5AW8AU9qSf/view?usp=sharing)
+Download Trained LSTM Model](https://drive.google.com/file/d/1x93g91Aq8vY3_TcQN_LRBK5AW8AU9qSf/view?usp=sharing)
 
 ### How to Run:
 1. Download the model and all attachments.
@@ -60,11 +60,11 @@
 
 ---
 
-## 📊 Evaluation Tools
+## Evaluation Tools
 
 - Evaluation is performed using:
-  - ✅ **GLEU**
-  - ✅ **BERTScore**
-  - ✅ **ERRANT**
+  - **GLEU**
+  - **BERTScore**
+  - **ERRANT**
 
 Refer to the respective `test_matrice_with_*.ipynb` notebooks in each model folder.
