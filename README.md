@@ -3,7 +3,9 @@
 In this repo, there are three folders:
 - Finetune T5: All the source code to fine-tune the T5 model
 - Encoder - Decoder LSTM: All the source code to train the Encoder - Decoder model
-- Errrant_eva: Folder to save file for ERRANT Evaluation
+- Errrant_eva: Folder to save file for ERRANT Evaluation (Precision, Recall, F0.5)
+
+The full version of our training dataset C4 can be found from here: [Kaggle C4 for GEC](https://www.kaggle.com/datasets/dariocioni/c4200m). The full version of our evaluation dataset Lang_8 can be found from here: [Lang_8](https://www.kaggle.com/datasets/studentramya/lang-8)
 
 1. Finetune T5:
 - Model Test: All the source code to test and evaluate the Fine-Tune T5
@@ -12,8 +14,6 @@ In this repo, there are three folders:
 - Train Model:
 + modeltrain_t5.ipynb: source code to fine-tune the T5 model. 
 
-
-
 2. Encoder - Decoder LSTM:
 - Model Test: All the source code to test and evaluate the Encoder - Decoder
 + test_matrice_with_lstm.ipynb: source code to evaluate the Encoder - Decoder with GLEU, BERTScore and ERRANT
@@ -21,16 +21,22 @@ In this repo, there are three folders:
 - Model Building: All the source code to build the Encoder - Decoder:
 + Building LSTM model.ipynb: Full source code to build the LSTM
 + Building LSTM model shorten.ipynb: Shortened source code to build the LSTM
+- The Word Embedding Pre-trained model FastText for LSTM Model: Downloaded directly from Facebook AI Public Files
+- Our final preprocessed data for convenience while training and testing can be found from this Drive: [Preprocessed Data for LSTM Training and Testing](https://drive.google.com/drive/folders/1EFWKW6SiPnbPmsjHoHP4qpdQcDe6kJll?usp=sharing)
++ train_dataset.pt: The preprocessed data for training
++ test_dataset.pt: The preprocessed data for validation
++ cleaned_data: The preprocessed data for evaluation
+- Model Attachment: the folder contains all of the attached resources for our trained LSTM (in_tokenizer, out_tokenizer, in_embedding_matrix, out_embedding_matrix): [Model Attachment](https://drive.google.com/drive/folders/16G99qkbqIItvv0RmBNfcjlb-mQ73G-mF?usp=sharing)
 
-[Note] In order to test the model:
+[Note] In order to test our model:
 1. T5 Fine-tune:
 - Download the model from the link: [T5 Fine-tune](https://drive.google.com/drive/folders/16ojRM38ZUNO40iIKytgATGPuk8aJDhBe?usp=sharing)
 - Download the predict_new.ipynb
 - Open predict_new, replace the link of the model with your actual model link
-- Put your input sentence and try the model
+- Put your input sentence and try our model!
 2. Encoder - Decoder LSTM:
 - Download the Model Attachement from the link: [Model Attachment](https://drive.google.com/drive/folders/16G99qkbqIItvv0RmBNfcjlb-mQ73G-mF?usp=sharing)
 - Download the model from the link: [LSTM Model](https://drive.google.com/file/d/1x93g91Aq8vY3_TcQN_LRBK5AW8AU9qSf/view?usp=sharing)
 - Download and open predict_new.py
 - Replace the link of the input, output embedding and in, out_tokenizer with your actual path
-- Put your input sentence and try the model
+- Put your input sentence and try our model!
