@@ -27,7 +27,7 @@
 
 ---
 
-## Encoder–Decoder LSTM
+## 2. Encoder–Decoder LSTM
 
 ### Contents:
 - `Building LSTM model.ipynb`: Full training code for the LSTM-based GEC model.
@@ -60,7 +60,7 @@ Download Trained LSTM Model](https://drive.google.com/file/d/1x93g91Aq8vY3_TcQN_
 
 ---
 
-## Evaluation Tools
+## 3. Evaluation Tools
 
 - Evaluation is performed using:
   - **GLEU**
