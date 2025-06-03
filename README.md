@@ -1,42 +1,70 @@
-# Project-NLP-final
- This is our source code for our NLP project
-In this repo, there are three folders:
-- Finetune T5: All the source code to fine-tune the T5 model
-- Encoder - Decoder LSTM: All the source code to train the Encoder - Decoder model
-- Errrant_eva: Folder to save file for ERRANT Evaluation (Precision, Recall, F0.5)
 
-The full version of our training dataset C4 can be found from here: [Kaggle C4 for GEC](https://www.kaggle.com/datasets/dariocioni/c4200m). The full version of our evaluation dataset Lang_8 can be found from here: [Lang_8](https://www.kaggle.com/datasets/studentramya/lang-8)
+---
 
-1. Finetune T5:
-- Model Test: All the source code to test and evaluate the Fine-Tune T5
-+ test_matrice_with_t5.ipnyb: source code to evaluate the T5 with GLEU, BERTScore and ERRANT
-+ predict_new.ipnyb: source code to test the Fine-Tune T5 with your input sentence
-- Train Model:
-+ modeltrain_t5.ipynb: source code to fine-tune the T5 model. 
+## Our Datasets
 
-2. Encoder - Decoder LSTM:
-- Model Test: All the source code to test and evaluate the Encoder - Decoder
-+ test_matrice_with_lstm.ipynb: source code to evaluate the Encoder - Decoder with GLEU, BERTScore and ERRANT
-+ predict_new.py: source code to test the Encoder - Decoder with your input sentence
-- Model Building: All the source code to build the Encoder - Decoder:
-+ Building LSTM model.ipynb: Full source code to build the LSTM
-+ Building LSTM model shorten.ipynb: Shortened source code to build the LSTM
-- The Word Embedding Pre-trained model FastText for LSTM Model: Downloaded directly from Facebook AI Public Files
-- Our final preprocessed data for convenience while training and testing can be found from this Drive: [Preprocessed Data for LSTM Training and Testing](https://drive.google.com/drive/folders/1EFWKW6SiPnbPmsjHoHP4qpdQcDe6kJll?usp=sharing)
-+ train_dataset.pt: The preprocessed data for training
-+ test_dataset.pt: The preprocessed data for validation
-+ cleaned_data: The preprocessed data for evaluation
-- Model Attachment: the folder contains all of the attached resources for our trained LSTM (in_tokenizer, out_tokenizer, in_embedding_matrix, out_embedding_matrix): [Model Attachment](https://drive.google.com/drive/folders/16G99qkbqIItvv0RmBNfcjlb-mQ73G-mF?usp=sharing)
+- **Training Dataset – C4 (Common Crawl)**  
+  🔗 [Download on Kaggle](https://www.kaggle.com/datasets/dariocioni/c4200m)
 
-[Note] In order to test our model:
-1. T5 Fine-tune:
-- Download the model from the link: [T5 Fine-tune](https://drive.google.com/drive/folders/16ojRM38ZUNO40iIKytgATGPuk8aJDhBe?usp=sharing)
-- Download the predict_new.ipynb
-- Open predict_new, replace the link of the model with your actual model link
-- Put your input sentence and try our model!
-2. Encoder - Decoder LSTM:
-- Download the Model Attachement from the link: [Model Attachment](https://drive.google.com/drive/folders/16G99qkbqIItvv0RmBNfcjlb-mQ73G-mF?usp=sharing)
-- Download the model from the link: [LSTM Model](https://drive.google.com/file/d/1x93g91Aq8vY3_TcQN_LRBK5AW8AU9qSf/view?usp=sharing)
-- Download and open predict_new.py
-- Replace the link of the input, output embedding and in, out_tokenizer with your actual path
-- Put your input sentence and try our model!
+- **Evaluation Dataset – Lang-8**  
+  🔗 [Download on Kaggle](https://www.kaggle.com/datasets/studentramya/lang-8)
+
+---
+
+## 1. Fine-tuned T5
+
+### Contents:
+- `modeltrain_t5.ipynb`: Fine-tunes the T5 model on the C4 dataset.
+- `test_matrice_with_t5.ipynb`: Evaluates the T5 model using GLEU, BERTScore, and ERRANT.
+- `predict_new.ipynb`: Run inference on new input sentences using your fine-tuned T5 model.
+
+### How to Run:
+1. Download the fine-tuned model:  
+   🔗 [T5 Fine-tune](https://drive.google.com/drive/folders/16ojRM38ZUNO40iIKytgATGPuk8aJDhBe?usp=sharing)
+2. Open `predict_new.ipynb`
+3. Replace the model path with your local directory
+4. Enter any input sentence to see the correction results
+
+---
+
+## Encoder–Decoder LSTM
+
+### Contents:
+- `Building LSTM model.ipynb`: Full training code for the LSTM-based GEC model.
+- `Building LSTM model shorten.ipynb`: Simplified version for quick implementation.
+- `test_matrice_with_lstm.ipynb`: Evaluation file (GLEU, BERTScore, ERRANT).
+- `predict_new.py`: Script to perform inference using a trained LSTM model.
+
+### Pre-trained Embeddings:
+- While training, we used FastText pre-trained word vectors downloaded from [Facebook AI](https://fasttext.cc/docs/en/crawl-vectors.html)
+
+### Preprocessed Data:
+[Download Preprocessed Data](https://drive.google.com/drive/folders/1EFWKW6SiPnbPmsjHoHP4qpdQcDe6kJll?usp=sharing)
+- `train_dataset.pt`: final preprocessed dataset for training
+- `test_dataset.pt`: final preprocessed dataset for testing
+- `cleaned_data.csv`: final preprocessed dataset for evaluation
+
+### Model Attachments:
+[Download Model Attachments](https://drive.google.com/drive/folders/16G99qkbqIItvv0RmBNfcjlb-mQ73G-mF?usp=sharing)
+- `in_tokenizer`, `out_tokenizer`: file saved the model's tokenizer
+- `in_embedding_matrix`, `out_embedding_matrix`: file saved the model's embedding matrix
+
+### Trained Model:
+🔗 [Download Trained LSTM Model](https://drive.google.com/file/d/1x93g91Aq8vY3_TcQN_LRBK5AW8AU9qSf/view?usp=sharing)
+
+### How to Run:
+1. Download the model and all attachments.
+2. Open `predict_new.py`
+3. Update paths for embeddings and tokenizers
+4. Input a sentence to see the predicted correction
+
+---
+
+## 📊 Evaluation Tools
+
+- Evaluation is performed using:
+  - ✅ **GLEU**
+  - ✅ **BERTScore**
+  - ✅ **ERRANT**
+
+Refer to the respective `test_matrice_with_*.ipynb` notebooks in each model folder.
