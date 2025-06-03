@@ -36,7 +36,7 @@
 - `predict_new.py`: Script to perform inference using a trained LSTM model.
 
 ### Pre-trained Embeddings:
-- While training, we used FastText pre-trained word vectors downloaded from [Facebook AI](https://fasttext.cc/docs/en/crawl-vectors.html)
+- While training, we used FastText pre-trained word vectors downloaded from FacebookAI
 
 ### Preprocessed Data:
 [Download Preprocessed Data](https://drive.google.com/drive/folders/1EFWKW6SiPnbPmsjHoHP4qpdQcDe6kJll?usp=sharing)
